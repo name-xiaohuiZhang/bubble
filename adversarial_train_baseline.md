@@ -1,6 +1,6 @@
 # 半监督文本分类的对抗训练方法
 此篇论文由京都大学ATR认知机制实验室，Google Brain，OpenAI共同发表于2017年的ICLR会议上
-[TOC]
+[原文链接](https://arxiv.org/abs/1605.07725)
 ## 摘要
 通过在循环神经网络的词嵌入上添加扰动，将对抗训练和虚拟对抗训练应用到文本领域。不仅在半监督学习和有监督学习任务上取得了先进的结果，而且模型不容易过拟合
 ## 1介绍
@@ -39,11 +39,11 @@ N’是有标注和无标注实例的总数量。
 有关于对抗方法的最新综述请移步：Adversarial perturbations of deep neural networks.
 ## 4实验设置
 所有的实验都是在GPU上使用TensorFlow
-[github源代码链接](https://github.com/aonotas/adversarial_text)
+[github源代码链接](https://github.com/tensorflow/models/tree/master/research/adversarial_text)
 实验数据集如表1所示：
 ![9](./adver_ICLR/9.png)
 ### 4.1循环语言模型预训练
-基于baseline: Andrew M Dai and Quoc V Le. Semi-supervised sequence learning. In NIPS, 2015.
+基于baseline: [Semi-supervised sequence learning](https://arxiv.org/abs/1511.01432)
 利用词嵌入矩阵和LSTM权重在有标注无五标注实例上预训练循环神经网络模型。
 对于单层的LSTM：
 1024个隐层单元；在IMDB数据集上的词嵌入维度为256，其他数据集上是512；使用带有1024个候选样本的采样softmax损失进行训练；
