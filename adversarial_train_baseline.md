@@ -39,7 +39,7 @@ N’是有标注和无标注实例的总数量。
 有关于对抗方法的最新综述请移步：Adversarial perturbations of deep neural networks.
 ## 4实验设置
 所有的实验都是在GPU上使用TensorFlow
-[github源代码链接](https://github.com/tensorflow/models/tree/master/adversarial_text)
+[github源代码链接](https://github.com/aonotas/adversarial_text)
 实验数据集如表1所示：
 ![9](./adver_ICLR/9.png)
 ### 4.1循环语言模型预训练
