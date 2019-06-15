@@ -1,5 +1,6 @@
 # 半监督文本分类的对抗训练方法
 此篇论文由京都大学ATR认知机制实验室，Google Brain，OpenAI共同发表于2017年的ICLR会议上
+[TOC]
 ## 摘要
 通过在循环神经网络的词嵌入上添加扰动，将对抗训练和虚拟对抗训练应用到文本领域。不仅在半监督学习和有监督学习任务上取得了先进的结果，而且模型不容易过拟合
 ## 1介绍
@@ -37,7 +38,8 @@ x表示输入θ表示分类器的参数。当应用于分类器的时候，对�
 N’是有标注和无标注实例的总数量。
 有关于对抗方法的最新综述请移步：Adversarial perturbations of deep neural networks.
 ## 4实验设置
-所有的实验都是在GPU上使用TensorFlow，源代码：https://github.com/tensorflow/models/tree/master/adversarial_text
+所有的实验都是在GPU上使用TensorFlow
+[github源代码链接](https://github.com/tensorflow/models/tree/master/adversarial_text)
 实验数据集如表1所示：
 ![9](./adver_ICLR/9.png)
 ### 4.1循环语言模型预训练
