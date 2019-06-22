@@ -15,7 +15,7 @@
 词嵌入矩阵VR<sup>(K+1)×D</sup>，其中表示词汇表中单词的数量，每一行v<sub>k</sub>表示顶i个单词相应的词嵌入。第k+1个词嵌入表示序列的结束，用v<sub>eos</sub>表示。我们主要使用简单的基于LSTM的神经网络模型，如图1所示：在时间步t，输入的是离散单词w<sup>(t)</sup>和相应的词嵌入v<sup>(t)</sup>。
 在词模型的基础上，作者又构建了对于文本分类的双向LSTM模型，即在反向序列上添加额外的LSTM到图1中描述的单向LSTM模型上。然后，模型预测序列两端的级联LSTM输出上的标签
 
-![0.jpg](/Users/didi/Desktop/adv/adver_ICLR/0.jpg)
+![0.jpg](./adver_ICLR/0.jpg)
 
 
 
